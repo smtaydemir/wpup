@@ -1,0 +1,27 @@
+{
+    "name": "smtaydemir/wpup",
+    "description": "Wordpress installer.",
+    "keywords": ["wordpress"],
+
+    "authors": [
+      {
+        "name": "Samet Aydemir",
+        "email": "sametaydemir@yandex.com"
+      }
+    ],
+
+	"require" : {
+		"symfony/console" : "~2.0",
+		"guzzlehttp/guzzle": "^6.0"
+	},
+
+    "autoload" : {
+      "psr-4": {
+        "wpup\\" : "src"
+      }
+    },
+
+    "bin": [
+      "wpup"
+    ]
+}

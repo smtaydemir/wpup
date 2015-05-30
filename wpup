@@ -1,0 +1,19 @@
+#! /usr/bin/env php
+
+<?php
+
+/**
+ * Wordpress Installer
+ * @author Samet Aydemir <sametaydemir@yandex.com>
+ */
+
+use wpup\wpup;
+use Symfony\Component\Console\Application;
+
+require 'vendor/autoload.php';
+
+$wpup = new Application('Wordpress Installer', '1.0');
+
+$wpup->add(new wpup(new GuzzleHttp\Client()));
+
+$wpup->run();
