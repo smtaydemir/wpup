@@ -2,7 +2,7 @@
     "name": "smtaydemir/wpup",
     "description": "Wordpress installer.",
     "keywords": ["wordpress"],
-
+    "license": "MIT",
     "authors": [
       {
         "name": "Samet Aydemir",
