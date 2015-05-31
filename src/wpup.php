@@ -68,20 +68,25 @@ class wpup extends Command{
 
 
     private function downloadZipFile($zip){
-        // https://github.com/WordPress/WordPress/archive/master.zip
-        $request = $this->client->get('https://github.com/WordPress/WordPress/archive/master.zip')->getBody();
+        // https://wordpress.org/latest.zip
+        $request = $this->client->get('https://wordpress.org/latest.zip')->getBody();
         file_put_contents($zip,$request);
         return $this;
     }
 
 
     private function extractZipFile($zip, $dir){
+    	
+    	$temp = 'temp'.md5(time().uniqid());
 
         $arch = new ZipArchive;
 
         $arch->open($zip);
-        $arch->extractTo($dir);
+        $arch->extractTo($temp);
         $arch->close();
+        
+        rename($temp.DIRECTORY_SEPARATOR.'wordpress', $dir);
+        @rmdir($temp);
 
         return $this;
     }
