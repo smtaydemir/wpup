@@ -1,4 +1,4 @@
-# Wordpress Installer
+# Wordpress Downloader
 
 ![cat](https://github.com/smtaydemir/wpup/blob/master/intro.gif?raw=true)
 
