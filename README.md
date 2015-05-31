@@ -29,5 +29,9 @@ $ cd <folder>
 ```
 
 ```
+$ composer install
+```
+
+```
 $ ./wpup new <blogname>
 ```

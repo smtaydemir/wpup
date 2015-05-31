@@ -4,26 +4,26 @@
     "keywords": ["wordpress"],
     "license": "MIT",
     "authors": [
-      {
-        "name": "Samet Aydemir",
-        "email": "sametaydemir@yandex.com"
-      }
+        {
+            "name": "Samet Aydemir",
+            "email": "sametaydemir@yandex.com"
+        }
     ],
 
-	"require" : {
-		"symfony/console" : "~2.0",
-		"guzzlehttp/guzzle": "^6.0"
+    "require" : {
+        "symfony/console" : "~2.0",
+        "guzzlehttp/guzzle": "^6.0"
 	},
 
-  "minimum-stability": "dev",
+    "minimum-stability": "dev",
 
     "autoload" : {
-      "psr-4": {
-        "wpup\\" : "src"
-      }
+        "psr-4": {
+            "wpup\\" : "src"
+        }
     },
 
     "bin": [
-      "wpup"
+        "wpup"
     ]
 }
