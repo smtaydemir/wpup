@@ -1,5 +1,4 @@
 #! /usr/bin/env php
-
 <?php
 
 /**
@@ -7,10 +6,10 @@
  * @author Samet Aydemir <sametaydemir@yandex.com>
  */
 
+require __DIR__ . '/vendor/autoload.php';
+
 use wpup\wpup;
 use Symfony\Component\Console\Application;
-
-require 'vendor/autoload.php';
 
 $wpup = new Application('Wordpress Installer', '1.0');
 
